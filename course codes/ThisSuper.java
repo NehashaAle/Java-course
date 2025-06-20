@@ -30,6 +30,6 @@ class Car extends Vehicle {
 public class ThisSuper {
     public static void main(String[] args) {
         // Car obj = new Car();
-        Car obj1 = new Car("Mustang");
+        // Car obj1 = new Car("Mustang");
     }
 }
