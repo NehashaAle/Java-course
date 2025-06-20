@@ -19,8 +19,7 @@ class Human {
     }
 
     public Human() {
-        name = "om";
-        roll = 5;
+
         // System.out.println("in default constructor");
     }
 

@@ -36,9 +36,9 @@ public class Static {
 
         std2.name = "Gita";
         std2.rollno = 8;
-        std2.address = "Tilottama";
+        Student.address = "Tilottama";
 
-        std1.address = "Manigram"; // use of static variable
+        // std1.address = "Manigram"; // use of static variable
 
         std1.display();
         std2.display();
