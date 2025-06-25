@@ -1,5 +1,5 @@
 interface InA {
-    int age = 21;
+    int age = 21; // final and static
     String name = "Himal";
 
     void show();
