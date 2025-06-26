@@ -1,3 +1,4 @@
+//Normal Interface
 interface InA {
     int age = 21; // final and static
     String name = "Himal";
@@ -7,7 +8,17 @@ interface InA {
     void display();
 }
 
-class B implements InA {
+// Functional / SAM interface
+interface InB {
+    void config();
+}
+
+// Marker Interface
+interface InC extends InA, InB { // Multiple Inhertance
+
+}
+
+class B implements InC {
     public void show() {
         System.out.println("in show");
     }
@@ -15,13 +26,18 @@ class B implements InA {
     public void display() {
         System.out.println("in display");
     }
+
+    public void config() {
+        System.out.println("in config");
+    }
 }
 
 public class Interface {
     public static void main(String[] args) {
-        B obj = new B();
+        InC obj = new B();
         obj.show();
         obj.display();
+        obj.config();
 
         System.out.println(InA.age + InA.name);
     }
