@@ -63,8 +63,8 @@ public class RunnableThread {
             }
         };
 
-        Thread trd1 = new Thread(obj1);
-        Thread trd2 = new Thread(obj2);
+        Thread trd1 = new Thread(o1);
+        Thread trd2 = new Thread(o2);
 
         trd1.start();
         trd2.start();
