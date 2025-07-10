@@ -1,4 +1,7 @@
 //Generic Class
+
+import java.util.ArrayList;
+
 class Vegetables<T> {
     T data;
 
@@ -64,5 +67,11 @@ public class GenericsExample {
         Float[] f1 = { 22f, 6.6f, 81f };
         Data<Float> f = new Data<>(f1);
         System.out.println("Total floating sum = " + f.sum());
+
+        // Generics Collection
+        ArrayList<String> list = new ArrayList<>();
+        list.add("Apple");
+        String fruits = list.get(0);
+        System.out.println(fruits);
     }
 }
